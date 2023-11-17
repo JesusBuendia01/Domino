@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+</head>
+<body>
+    <header class="header header-index">
+        <center> 
+        <h1>Crear cuenta de Usuario</h1>
+        </center>
+    </header>
+    <center>
+           <section class="section-register">
+        <form action="php/register.php" method="POST">
+            <label for="boleta" class="lbl-register">Boleta(id)</label>
+            <input type="text" name="boleta" id="boleta" class="inputRegister" placeholder="Boleta">
+            <label for="name" class="lbl-register"><br>Nombre</label>
+            <input type="text" name="name" id="name" class="inputRegister" placeholder="Nombre">
+            <label for="lastname" class="lbl-register"><br>Apellido</label>
+            <input type="text" name="lastname" id="lastname" class="inputRegister" placeholder="Apellido">
+            <label for="username" class="lbl-register"><br>Usuario</label>
+            <input type="text" name="username" id="username" class="inputRegister" placeholder="Usuario">
+            <label for="password" class="lbl-register"><br>Contraseña</label>
+            <input type="password" name="password" id="password" class="inputRegister" placeholder="Contraseña"><br><br>
+            <button type="submit" class="submit-register">Registrarse</button>
+        </form>
+
+        <p> ¿Ya tienes una cuenta? <a href="index.html"> Inicia sesion</a></p>
+    </section>
+    </center>
+
+</body>
+</html>

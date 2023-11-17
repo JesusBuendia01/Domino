@@ -1,0 +1,15 @@
+header{
+	width: 1000px;
+	height: 250px;
+	margin:auto;
+	display:block;
+	text-align: center;
+	display:flex;
+    justify-content: center;
+    align-items: center;
+	background: url("../fondoipn.jpg");
+}
+body {
+    background-image: url("escom.jpg");
+}
+

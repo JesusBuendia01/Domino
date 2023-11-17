@@ -1,0 +1,194 @@
+<!-- HTML5 y CSS -->
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Juego de domino</title>
+		<link rel="stylesheet" href="master.css" type="text/css" media="screen" />
+	</head>
+	<body>
+		<header>
+			<h1>El Blog del domino</h1>
+		</header>
+		<nav>
+			<ul>
+				<li class="selected"><a href="#">Blog</a></li>
+				<li><a href="#">Acerca</a></li>
+				<li><a href="#">Archivos</a></li>
+				<li><a href="#">Contacto</a></li>
+				<li class="subscribe"><a href="#">Subscribirse</a></li>
+			</ul>
+		</nav>
+		<section id="intro">
+			<header>
+				<h2>¿Que es el domino?</h2>
+			</header>
+			<p> El dominó es un juego de mesa que muchas personas lo consideran como una extensión de los dados. El dominó se compone de 28 fichas rectangulares. En este juego pueden participar dos, tres o cuatro personas.. </p>
+			<img src="fondoipn.jpg" alt="Flor" />
+		</section>
+		<div id="content">
+			<div id="mainContent">
+				<section>
+					<article class="blogPost">
+						<header>
+							<h2> ¿Como jugar?</h2>
+							</header>
+						<div>
+							<p>
+								Lo primero que necesitas saber es que necesitas una cuenta para poder jugar, por lo que si aun no la tienes, te invito a <a href="register.html"> crear una </a> o dar click a el apartado de la derecha <br> <br>
+								Este sera un juego de destresa, por lo que es necesario que estes atento a los diferentes patrones
+							</p>
+
+							<p>
+								A continuacion mostaran unos ejemplos de como es que se debe jugar <br>
+								<center>
+									<img src="./assetss/eje1.jpg" alt="eje1" width="250" height="250" /> <br>
+									.                 Como se puede dar cuenta, todas siguen el mismo patron, por lo que la respuesta es 1 y 3
+									<br>
+									<img src="./assetss/eje2.jpg" alt="eje1" width="250" height="250" /><br>
+									Al igual que con la imagen a, el patron es el mismo, por lo tanto es 5 y 2
+								</center>
+								
+								El juego en total consiste en 48 imagenes, cada una con su respuesta diferente, al final se le dara el puntaje acumulado de intentos
+
+								<header class="header header-index">
+									<h1> Ingrese su usuario y contraseña para continuar</h1>
+								</header>
+								<center>
+								<section class="login">
+									<form action="php/login.php" method="POST">
+										<label for="username" class="lbl-login">Usuario</label>
+										<input type="text" name="username" id="username" class="inputLogin" placeholder="Usuario">
+										<label for="password" class="lbl-login">Contraseña</label>
+										<input type="password" name="password" id="password" class="inputLogin" placeholder="Contraseña"> <br>
+										<button type="submit" class="submit-login">Iniciar sesión</button>
+									</form>
+								</section>
+								<section class="to-register">
+									<a href="register.html" class="a-register">
+										<h4>¿No tienes usuario?</h4>
+										Registrate
+									</a>
+								</section>
+							</center>
+
+
+							
+							</p>
+
+
+						
+					</article>
+				</section>
+
+				
+				<section id="comments">
+					<h3>Comments</h3>
+					<article>
+						<header>
+							<a href="#">Benito Ju&aacute;rez</a> on <time datetime="2016-06-29T23:35:20+01:00">June 29th 2016 at 23:35</time>
+						</header>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut.</p>
+					</article>
+					<article>
+						<header>
+							<a href="#">Francisco Villa</a> on <time datetime="2016-06-29T23:40:09+01:00">June 29th 2016 at 23:40</time>
+						</header>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut.</p>
+					</article>
+					<article>
+						<header>
+							<a href="#">Emiliano Zapata</a> on <time datetime="2016-06-29T23:59:00+01:00">June 29th 2016 at 23:59</time>
+						</header>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut.</p>
+					</article>
+				</section>
+				<form action="#" method="post">
+					<h3>Enviar un comentario</h3>
+					<p>
+						<label for="name">Nombre</label>
+						<input name="name" id="name" type="text" required />
+					</p>
+					<p>
+						<label for="email">E-mail</label>
+						<input name="email" id="email" type="email" required />
+					</p>
+					<p>
+						<label for="website">Website</label>
+						<input name="website" id="website" type="url" />
+					</p>
+					<p>
+						<label for="comment">Comentario</label>
+						<textarea name="comment" id="comment" required></textarea>
+					</p>
+					<p><input type="submit" value="Post comment" /></p>
+				</form>
+			</div>
+			<aside>
+				<section>
+				<header>
+					<h3>¿No tienes una cuenta?</h3>	
+				</header>
+					<ul>
+						<li><a href="register.html">Crear una</a></li>
+						<img src="dom.jpg" alt="domi" />
+						
+					</ul>
+				</section>
+				<!--
+				
+				<section>
+					<header>
+						<h3>Archives</h3>
+					</header>
+					<ul>
+						<li><a href="#">Diciembre 2015</a></li>
+						<li><a href="#">Enero 2016</a></li>
+						<li><a href="#">Febrero 2016</a></li>
+						<li><a href="#">Marzo 2016</a></li>
+						<li><a href="#">Abril 2016</a></li>
+						<li><a href="#">Mayo 2016</a></li>
+						<li><a href="#">Junio 2016</a></li>
+					</ul>
+				</section>
+			-->
+			</aside>
+		</div>
+		<footer>
+			<div>
+				<section id="about">
+					<header>
+						<h3>Acerca</h3>
+					</header>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco <a href="#">laboris nisi ut aliquip</a> ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				</section>
+				<section id="blogroll">
+					<header>
+						<h3>Blogroll</h3>
+					</header>
+					<ul>
+						<li><a href="#">NETTUTS+</a></li>
+						<li><a href="#">FreelanceSwitch</a></li>
+						<li><a href="#">En los Bosques</a></li>
+						<li><a href="#">Netsetter</a></li>
+						<li><a href="#">PSDTUTS+</a></li>
+					</ul>
+				</section>
+				<section id="popular">
+					<header>
+						<h3>Popular</h3>
+					</header>
+					<ul>
+						<li><a href="#">Este es el t&iacute;tulo de un blog post</a></li>
+						<li><a href="#">Lorem ipsum dolor sit amet</a></li>
+						<li><a href="#">Consectetur adipisicing elit, sed do eiusmod</a></li>
+						<li><a href="#">Duis aute irure dolor</a></li>
+						<li><a href="#">Excepteur sint occaecat cupidatat</a></li>
+						<li><a href="#">Reprehenderit in voluptate velit</a></li>
+						<li><a href="#">Officia deserunt mollit anim id est laborum</a></li>
+						<li><a href="#">Lorem ipsum dolor sit amet</a></li>
+					</ul>
+				</section>
+			</div>
+		</footer>
+	</body>
+</html>

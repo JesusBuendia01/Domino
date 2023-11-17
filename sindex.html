@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+    <title>Domino</title>
+</head>
+<body>
+    <header class="header header-index">
+        <h1> Ingrese su usuario y contraseña para continuar</h1>
+    </header>
+    <section class="login">
+        <form action="php/login.php" method="POST">
+            <label for="username" class="lbl-login">Usuario</label>
+            <input type="text" name="username" id="username" class="inputLogin" placeholder="Usuario">
+            <label for="password" class="lbl-login">Contraseña</label>
+            <input type="password" name="password" id="password" class="inputLogin" placeholder="Contraseña">
+            <button type="submit" class="submit-login">Iniciar sesión</button>
+        </form>
+    </section>
+    <section class="to-register">
+        <a href="register.html" class="a-register">
+            <h4>¿No tienes usuario?</h4>
+            Registrate
+        </a>
+    </section>
+</body>
+</html>
